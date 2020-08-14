@@ -3,4 +3,4 @@
 create a dynamic chart to compare select parameters.  A tooltip was added to show detailed
 information on each datapoint as you hover over the point.
 
-![](2020-08-14-16-15-52.png)
+![](2020-08-14-17-03-34.png)

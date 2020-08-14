@@ -214,7 +214,7 @@ function makeResponsive() {
                 
         // create x and y axis labels
         var xlabelsGroup = chartGroup.append("g")
-            .attr("transform", `translate(${width / 2}, ${height + 20})`)
+            .attr("transform", `translate(${width / 2}, ${height + 25})`)
             .attr("class", "aText");
 
         var ylabelsGroup = chartGroup.append("g")
@@ -247,7 +247,6 @@ function makeResponsive() {
             .attr("y", 0 - margin.left + 49)
             .attr("x", 0 - (height / 2))
             .attr("value", "healthcare") 
-            .attr("dy", "1em")
             .classed("active", true)
             .text("Percent of Population Lacking Healthcare");
             
@@ -256,7 +255,6 @@ function makeResponsive() {
             .attr("y", 0 - margin.left + 27)
             .attr("x", 0 - (height / 2))
             .attr("value", "smokes") 
-            .attr("dy", "1em")
             .classed("inactive", true)
             .text("Percent of Population Who Smoke");
         
@@ -265,7 +263,6 @@ function makeResponsive() {
             .attr("y", 0 - margin.left + 5)
             .attr("x", 0 - (height / 2))
             .attr("value", "obesity")
-            .attr("dy", "1em")
             .classed("inactive", true)
             .text("Obese Population Percentage");
         

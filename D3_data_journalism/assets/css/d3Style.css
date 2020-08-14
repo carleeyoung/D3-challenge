@@ -6,13 +6,13 @@
 
 .xText {
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 100%;
   text-anchor: middle;
 }
 
 .yText {
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 100%;
   text-anchor: end;
 }
 
@@ -22,19 +22,24 @@
   fill: #000;
   transition: fill 0.3s ease-out;
   text-anchor: middle;
+  stroke-width: 0;
 }
 
 .inactive {
-  font-weight: lighter;
+  font-weight: 100;
+  font-size: 18px;
   fill: #c9c9c9;
   transition: fill 0.3s ease-out;
   text-anchor: middle;
+  stroke-width: 0;
+  text-rendering: optimizeLegibility;
 }
 
 .inactive:hover {
-  font-weight: bolder;
+  font-weight: 900;
   fill: rgb(19, 32, 75);
   cursor: pointer;
+  text-rendering: optimizeLegibility;
 }
 
 /* font size dependent on radius, see app.js */
